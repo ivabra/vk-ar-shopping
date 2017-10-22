@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.5.1)
+  - IBSwiftToolKit (0.0.8)
+  - MBProgressHUD (1.0.0)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - Zip (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IBSwiftToolKit (from `git@github.com:ivabra/IBSwiftToolKit.git`, tag `0.1-beta.1`)
+  - MBProgressHUD
+  - SDWebImage
+  - Zip
+
+EXTERNAL SOURCES:
+  IBSwiftToolKit:
+    :git: git@github.com:ivabra/IBSwiftToolKit.git
+    :tag: 0.1-beta.1
+
+CHECKOUT OPTIONS:
+  IBSwiftToolKit:
+    :git: git@github.com:ivabra/IBSwiftToolKit.git
+    :tag: 0.1-beta.1
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  IBSwiftToolKit: f57f24c1c82aa94d1b66848bda5db5b017820085
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  Zip: 115a122433829a1bbf33f5575fa84047438dcc12
+
+PODFILE CHECKSUM: 799c92ae4c6b5b8838eae1c1527185e3d7c348f6
+
+COCOAPODS: 1.4.0.beta.1

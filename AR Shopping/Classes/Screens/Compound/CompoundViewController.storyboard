@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cnC-nN-WR6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Compound View Controller-->
+        <scene sceneID="iTk-yI-mmq">
+            <objects>
+                <viewController id="cnC-nN-WR6" customClass="CompoundViewController" customModule="AR_Shopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ow1-Jr-N77">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhI-CK-o0S" userLabel="AR Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="pnt-ZN-WWN" kind="embed" identifier="ar" id="U0P-CI-nuc"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUB-kx-rF9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oNE-eL-fFu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihx-yC-akE" userLabel="UI Container">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="R5o-Qm-olg" kind="embed" identifier="ui" id="5Wg-V8-Gn0"/>
+                                            </connections>
+                                        </containerView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Ihx-yC-akE" secondAttribute="trailing" id="9tF-KF-3sH"/>
+                                        <constraint firstItem="Ihx-yC-akE" firstAttribute="top" secondItem="oNE-eL-fFu" secondAttribute="top" id="Bw5-s5-TbV"/>
+                                        <constraint firstItem="Ihx-yC-akE" firstAttribute="leading" secondItem="oNE-eL-fFu" secondAttribute="leading" id="L1h-ns-FTU"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ihx-yC-akE" secondAttribute="bottom" id="iNc-gs-SJI"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a3B-Qm-F6c" firstAttribute="trailing" secondItem="JUB-kx-rF9" secondAttribute="trailing" id="1TH-97-nqt"/>
+                            <constraint firstItem="a3B-Qm-F6c" firstAttribute="bottom" secondItem="JUB-kx-rF9" secondAttribute="bottom" id="2pp-zX-5ZO"/>
+                            <constraint firstItem="JUB-kx-rF9" firstAttribute="leading" secondItem="a3B-Qm-F6c" secondAttribute="leading" id="ImI-bO-CD1"/>
+                            <constraint firstItem="JUB-kx-rF9" firstAttribute="top" secondItem="ow1-Jr-N77" secondAttribute="top" id="MCE-kS-lFf"/>
+                            <constraint firstItem="FhI-CK-o0S" firstAttribute="top" secondItem="ow1-Jr-N77" secondAttribute="top" id="atM-gu-EXr"/>
+                            <constraint firstItem="FhI-CK-o0S" firstAttribute="bottom" secondItem="a3B-Qm-F6c" secondAttribute="bottom" id="bmM-5a-Zoq"/>
+                            <constraint firstItem="FhI-CK-o0S" firstAttribute="leading" secondItem="a3B-Qm-F6c" secondAttribute="leading" id="qCW-7Y-cSk"/>
+                            <constraint firstItem="FhI-CK-o0S" firstAttribute="trailing" secondItem="a3B-Qm-F6c" secondAttribute="trailing" id="xJy-fN-Abq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a3B-Qm-F6c"/>
+                    </view>
+                    <connections>
+                        <outlet property="blurView" destination="JUB-kx-rF9" id="Fp1-Am-8QJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXy-yu-46o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472.80000000000001" y="-178.56071964017991"/>
+        </scene>
+        <!--ARScreen-->
+        <scene sceneID="MQ4-tL-yzw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ARScreen" id="pnt-ZN-WWN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wE-P2-aJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224" y="-315"/>
+        </scene>
+        <!--ShopListScreen-->
+        <scene sceneID="VWl-75-dTE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShopListScreen" id="sM5-8A-s06" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tw0-BO-78z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phx-Vg-HC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="182"/>
+        </scene>
+        <!--Clear Navigation Controller-->
+        <scene sceneID="S42-BK-rhc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R5o-Qm-olg" customClass="ClearNavigationController" customModule="AR_Shopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="cwA-A8-slu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sM5-8A-s06" kind="relationship" relationship="rootViewController" id="4vo-GV-hil"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DV5-Zw-AlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="183"/>
+        </scene>
+    </scenes>
+</document>

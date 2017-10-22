@@ -7,23 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0BA8A2A82F5E7D36411074 /* Pods_AR_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C62B05AE6727F668D984A8 /* Pods_AR_Shopping.framework */; };
 		9F22E6BF1F9A30F30069E61C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22E6BE1F9A30F30069E61C /* AppDelegate.swift */; };
 		9F22E6C11F9A30F30069E61C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F22E6C01F9A30F30069E61C /* art.scnassets */; };
-		9F22E6C31F9A30F30069E61C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22E6C21F9A30F30069E61C /* ViewController.swift */; };
-		9F22E6C61F9A30F30069E61C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F22E6C41F9A30F30069E61C /* Main.storyboard */; };
+		9F22E6C31F9A30F30069E61C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22E6C21F9A30F30069E61C /* ARViewController.swift */; };
 		9F22E6C81F9A30F30069E61C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F22E6C71F9A30F30069E61C /* Assets.xcassets */; };
 		9F22E6CB1F9A30F30069E61C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F22E6C91F9A30F30069E61C /* LaunchScreen.storyboard */; };
+		9F22E6D61F9A31650069E61C /* ARScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F22E6D51F9A31650069E61C /* ARScreen.storyboard */; };
+		9F22E6DA1F9A31980069E61C /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22E6D91F9A31980069E61C /* StartupViewController.swift */; };
+		9F22E6DC1F9A31AA0069E61C /* StatupScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F22E6DB1F9A31AA0069E61C /* StatupScreen.storyboard */; };
+		9F3CA6361F9A80AB0008BBCB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6351F9A80AB0008BBCB /* BaseViewController.swift */; };
+		9F3CA6391F9A82040008BBCB /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6381F9A82040008BBCB /* ShopListViewController.swift */; };
+		9F3CA63C1F9A82F40008BBCB /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA63B1F9A82F40008BBCB /* Shop.swift */; };
+		9F3CA63E1F9A831E0008BBCB /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA63D1F9A831E0008BBCB /* ProductCategory.swift */; };
+		9F3CA6401F9A83BF0008BBCB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA63F1F9A83BF0008BBCB /* Product.swift */; };
+		9F3CA6421F9A93A00008BBCB /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6411F9A93A00008BBCB /* Plane.swift */; };
+		9F3CA6451F9B835A0008BBCB /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6441F9B835A0008BBCB /* ModelLoader.swift */; };
+		9F82D7651F9BFA430079386B /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D7641F9BFA430079386B /* ItemsResponse.swift */; };
+		9F82D7691F9BFCBA0079386B /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D7681F9BFCBA0079386B /* Concurrency.swift */; };
+		9F82D76D1F9C04BC0079386B /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D76C1F9C04BC0079386B /* ProductListViewController.swift */; };
+		9F82D76F1F9C079A0079386B /* ShopListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F82D76E1F9C079A0079386B /* ShopListScreen.storyboard */; };
+		9F82D7711F9C07A40079386B /* ProductListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F82D7701F9C07A40079386B /* ProductListScreen.storyboard */; };
+		9F82D7731F9C0C500079386B /* CompoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D7721F9C0C500079386B /* CompoundViewController.swift */; };
+		9F82D7761F9C0C920079386B /* CompoundViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F82D7751F9C0C920079386B /* CompoundViewController.storyboard */; };
+		9F82D7791F9C1A0F0079386B /* LoadingModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D7781F9C1A0F0079386B /* LoadingModelViewController.swift */; };
+		9F82D77B1F9C1CD60079386B /* LoadingModelScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F82D77A1F9C1CD60079386B /* LoadingModelScreen.storyboard */; };
+		9F82D77D1F9C1DCF0079386B /* BaseComountChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D77C1F9C1DCF0079386B /* BaseComountChildViewController.swift */; };
+		9F82D77F1F9C1FCB0079386B /* ModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D77E1F9C1FCB0079386B /* ModelFileManager.swift */; };
+		9F82D7831F9C58DB0079386B /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82D7821F9C58DB0079386B /* UIImageView+Utils.swift */; };
+		9FC28DB91F9BD75200E239FD /* ModelWrapperNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC28DB81F9BD75200E239FD /* ModelWrapperNode.swift */; };
+		9FC28DBD1F9BF45500E239FD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC28DBC1F9BF45500E239FD /* Network.swift */; };
+		9FC28DC11F9BF73100E239FD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC28DC01F9BF73100E239FD /* API.swift */; };
+		9FC28DC31F9BF75400E239FD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC28DC21F9BF75400E239FD /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0A879E0FF083E1AB1F3C02 /* Pods-AR Shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Shopping/Pods-AR Shopping.release.xcconfig"; sourceTree = "<group>"; };
+		81C62B05AE6727F668D984A8 /* Pods_AR_Shopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Shopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3059A19127578358DA8A1A /* Pods-AR Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Shopping/Pods-AR Shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		9F22E6BB1F9A30F30069E61C /* AR Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Shopping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F22E6BE1F9A30F30069E61C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F22E6C01F9A30F30069E61C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		9F22E6C21F9A30F30069E61C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F22E6C51F9A30F30069E61C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F22E6C21F9A30F30069E61C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		9F22E6C71F9A30F30069E61C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F22E6CA1F9A30F30069E61C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F22E6CC1F9A30F30069E61C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F22E6D51F9A31650069E61C /* ARScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARScreen.storyboard; sourceTree = "<group>"; };
+		9F22E6D91F9A31980069E61C /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		9F22E6DB1F9A31AA0069E61C /* StatupScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatupScreen.storyboard; sourceTree = "<group>"; };
+		9F3CA6351F9A80AB0008BBCB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9F3CA6381F9A82040008BBCB /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		9F3CA63B1F9A82F40008BBCB /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		9F3CA63D1F9A831E0008BBCB /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
+		9F3CA63F1F9A83BF0008BBCB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9F3CA6411F9A93A00008BBCB /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		9F3CA6441F9B835A0008BBCB /* ModelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
+		9F82D7641F9BFA430079386B /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
+		9F82D7681F9BFCBA0079386B /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
+		9F82D76A1F9C010E0079386B /* AR Shopping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AR Shopping.entitlements"; sourceTree = "<group>"; };
+		9F82D76C1F9C04BC0079386B /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		9F82D76E1F9C079A0079386B /* ShopListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopListScreen.storyboard; sourceTree = "<group>"; };
+		9F82D7701F9C07A40079386B /* ProductListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductListScreen.storyboard; sourceTree = "<group>"; };
+		9F82D7721F9C0C500079386B /* CompoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundViewController.swift; sourceTree = "<group>"; };
+		9F82D7751F9C0C920079386B /* CompoundViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompoundViewController.storyboard; sourceTree = "<group>"; };
+		9F82D7781F9C1A0F0079386B /* LoadingModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModelViewController.swift; sourceTree = "<group>"; };
+		9F82D77A1F9C1CD60079386B /* LoadingModelScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingModelScreen.storyboard; sourceTree = "<group>"; };
+		9F82D77C1F9C1DCF0079386B /* BaseComountChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComountChildViewController.swift; sourceTree = "<group>"; };
+		9F82D77E1F9C1FCB0079386B /* ModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFileManager.swift; sourceTree = "<group>"; };
+		9F82D7821F9C58DB0079386B /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
+		9FC28DB81F9BD75200E239FD /* ModelWrapperNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelWrapperNode.swift; sourceTree = "<group>"; };
+		9FC28DBC1F9BF45500E239FD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9FC28DC01F9BF73100E239FD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9FC28DC21F9BF75400E239FD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0BA8A2A82F5E7D36411074 /* Pods_AR_Shopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +98,8 @@
 			children = (
 				9F22E6BD1F9A30F30069E61C /* AR Shopping */,
 				9F22E6BC1F9A30F30069E61C /* Products */,
+				DBC054606298DFCA7589D05C /* Pods */,
+				D17D2F5208B1B026906B65EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +114,154 @@
 		9F22E6BD1F9A30F30069E61C /* AR Shopping */ = {
 			isa = PBXGroup;
 			children = (
-				9F22E6BE1F9A30F30069E61C /* AppDelegate.swift */,
+				9F82D76A1F9C010E0079386B /* AR Shopping.entitlements */,
+				9F22E6D21F9A31290069E61C /* Classes */,
 				9F22E6C01F9A30F30069E61C /* art.scnassets */,
-				9F22E6C21F9A30F30069E61C /* ViewController.swift */,
-				9F22E6C41F9A30F30069E61C /* Main.storyboard */,
 				9F22E6C71F9A30F30069E61C /* Assets.xcassets */,
 				9F22E6C91F9A30F30069E61C /* LaunchScreen.storyboard */,
 				9F22E6CC1F9A30F30069E61C /* Info.plist */,
 			);
 			path = "AR Shopping";
+			sourceTree = "<group>";
+		};
+		9F22E6D21F9A31290069E61C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F82D7671F9BFCB00079386B /* Utils */,
+				9F82D7661F9BFB4B0079386B /* API */,
+				9F3CA6431F9B834A0008BBCB /* Services */,
+				9F22E6BE1F9A30F30069E61C /* AppDelegate.swift */,
+				9F3CA63A1F9A82C60008BBCB /* Data */,
+				9F22E6D31F9A31340069E61C /* Screens */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9F22E6D31F9A31340069E61C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9F3CA6351F9A80AB0008BBCB /* BaseViewController.swift */,
+				9F22E6D81F9A31850069E61C /* Startup */,
+				9F82D7741F9C0C690079386B /* Compound */,
+				9F3CA6371F9A81EA0008BBCB /* Stores */,
+				9F82D76B1F9C02930079386B /* Products */,
+				9F82D7771F9C19F90079386B /* Loading Model */,
+				9F22E6D41F9A31370069E61C /* AR */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9F22E6D41F9A31370069E61C /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				9F22E6C21F9A30F30069E61C /* ARViewController.swift */,
+				9F3CA6411F9A93A00008BBCB /* Plane.swift */,
+				9F22E6D51F9A31650069E61C /* ARScreen.storyboard */,
+				9FC28DB81F9BD75200E239FD /* ModelWrapperNode.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		9F22E6D81F9A31850069E61C /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				9F22E6D91F9A31980069E61C /* StartupViewController.swift */,
+				9F22E6DB1F9A31AA0069E61C /* StatupScreen.storyboard */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		9F3CA6371F9A81EA0008BBCB /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				9F3CA6381F9A82040008BBCB /* ShopListViewController.swift */,
+				9F82D76E1F9C079A0079386B /* ShopListScreen.storyboard */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		9F3CA63A1F9A82C60008BBCB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9F3CA63B1F9A82F40008BBCB /* Shop.swift */,
+				9F3CA63F1F9A83BF0008BBCB /* Product.swift */,
+				9F3CA63D1F9A831E0008BBCB /* ProductCategory.swift */,
+				9F82D7641F9BFA430079386B /* ItemsResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9F3CA6431F9B834A0008BBCB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F3CA6441F9B835A0008BBCB /* ModelLoader.swift */,
+				9F82D77E1F9C1FCB0079386B /* ModelFileManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F82D7661F9BFB4B0079386B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9FC28DBC1F9BF45500E239FD /* Network.swift */,
+				9FC28DC01F9BF73100E239FD /* API.swift */,
+				9FC28DC21F9BF75400E239FD /* Router.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9F82D7671F9BFCB00079386B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9F82D7681F9BFCBA0079386B /* Concurrency.swift */,
+				9F82D7821F9C58DB0079386B /* UIImageView+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9F82D76B1F9C02930079386B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F82D76C1F9C04BC0079386B /* ProductListViewController.swift */,
+				9F82D7701F9C07A40079386B /* ProductListScreen.storyboard */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		9F82D7741F9C0C690079386B /* Compound */ = {
+			isa = PBXGroup;
+			children = (
+				9F82D7721F9C0C500079386B /* CompoundViewController.swift */,
+				9F82D7751F9C0C920079386B /* CompoundViewController.storyboard */,
+				9F82D77C1F9C1DCF0079386B /* BaseComountChildViewController.swift */,
+			);
+			path = Compound;
+			sourceTree = "<group>";
+		};
+		9F82D7771F9C19F90079386B /* Loading Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F82D7781F9C1A0F0079386B /* LoadingModelViewController.swift */,
+				9F82D77A1F9C1CD60079386B /* LoadingModelScreen.storyboard */,
+			);
+			path = "Loading Model";
+			sourceTree = "<group>";
+		};
+		D17D2F5208B1B026906B65EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81C62B05AE6727F668D984A8 /* Pods_AR_Shopping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBC054606298DFCA7589D05C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A3059A19127578358DA8A1A /* Pods-AR Shopping.debug.xcconfig */,
+				3D0A879E0FF083E1AB1F3C02 /* Pods-AR Shopping.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F22E6CF1F9A30F30069E61C /* Build configuration list for PBXNativeTarget "AR Shopping" */;
 			buildPhases = (
+				A4E8F26EE3D772359E608B0A /* [CP] Check Pods Manifest.lock */,
 				9F22E6B71F9A30F30069E61C /* Sources */,
 				9F22E6B81F9A30F30069E61C /* Frameworks */,
 				9F22E6B91F9A30F30069E61C /* Resources */,
+				F72893B5944614371D3A3BE3 /* [CP] Embed Pods Frameworks */,
+				CC3758A7F83F6D6419E73A5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +300,11 @@
 					9F22E6BA1F9A30F30069E61C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,36 +331,115 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F82D7711F9C07A40079386B /* ProductListScreen.storyboard in Resources */,
+				9F82D7761F9C0C920079386B /* CompoundViewController.storyboard in Resources */,
+				9F22E6D61F9A31650069E61C /* ARScreen.storyboard in Resources */,
+				9F22E6DC1F9A31AA0069E61C /* StatupScreen.storyboard in Resources */,
+				9F82D76F1F9C079A0079386B /* ShopListScreen.storyboard in Resources */,
 				9F22E6C11F9A30F30069E61C /* art.scnassets in Resources */,
+				9F82D77B1F9C1CD60079386B /* LoadingModelScreen.storyboard in Resources */,
 				9F22E6CB1F9A30F30069E61C /* LaunchScreen.storyboard in Resources */,
 				9F22E6C81F9A30F30069E61C /* Assets.xcassets in Resources */,
-				9F22E6C61F9A30F30069E61C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4E8F26EE3D772359E608B0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR Shopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3758A7F83F6D6419E73A5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Shopping/Pods-AR Shopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72893B5944614371D3A3BE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AR Shopping/Pods-AR Shopping-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IBSwiftToolKit/IBSwiftToolKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBSwiftToolKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Shopping/Pods-AR Shopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F22E6B71F9A30F30069E61C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F22E6C31F9A30F30069E61C /* ViewController.swift in Sources */,
+				9F22E6C31F9A30F30069E61C /* ARViewController.swift in Sources */,
+				9F82D76D1F9C04BC0079386B /* ProductListViewController.swift in Sources */,
+				9F82D7831F9C58DB0079386B /* UIImageView+Utils.swift in Sources */,
+				9F3CA6421F9A93A00008BBCB /* Plane.swift in Sources */,
+				9F3CA6451F9B835A0008BBCB /* ModelLoader.swift in Sources */,
+				9F3CA6401F9A83BF0008BBCB /* Product.swift in Sources */,
+				9F3CA6361F9A80AB0008BBCB /* BaseViewController.swift in Sources */,
+				9F82D77D1F9C1DCF0079386B /* BaseComountChildViewController.swift in Sources */,
+				9F82D7651F9BFA430079386B /* ItemsResponse.swift in Sources */,
+				9F22E6DA1F9A31980069E61C /* StartupViewController.swift in Sources */,
+				9F82D7691F9BFCBA0079386B /* Concurrency.swift in Sources */,
+				9FC28DB91F9BD75200E239FD /* ModelWrapperNode.swift in Sources */,
+				9F3CA63C1F9A82F40008BBCB /* Shop.swift in Sources */,
+				9FC28DC11F9BF73100E239FD /* API.swift in Sources */,
+				9F3CA6391F9A82040008BBCB /* ShopListViewController.swift in Sources */,
+				9F82D7791F9C1A0F0079386B /* LoadingModelViewController.swift in Sources */,
+				9FC28DC31F9BF75400E239FD /* Router.swift in Sources */,
+				9F82D77F1F9C1FCB0079386B /* ModelFileManager.swift in Sources */,
 				9F22E6BF1F9A30F30069E61C /* AppDelegate.swift in Sources */,
+				9F82D7731F9C0C500079386B /* CompoundViewController.swift in Sources */,
+				9FC28DBD1F9BF45500E239FD /* Network.swift in Sources */,
+				9F3CA63E1F9A831E0008BBCB /* ProductCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9F22E6C41F9A30F30069E61C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F22E6C51F9A30F30069E61C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F22E6C91F9A30F30069E61C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,13 +560,16 @@
 		};
 		9F22E6D01F9A30F30069E61C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3059A19127578358DA8A1A /* Pods-AR Shopping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AR Shopping/AR Shopping.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BH2X6NBVBC;
+				DEVELOPMENT_TEAM = 55BKHE3292;
 				INFOPLIST_FILE = "AR Shopping/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.goabout.AR-Shopping";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ruber.AR-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,13 +578,16 @@
 		};
 		9F22E6D11F9A30F30069E61C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0A879E0FF083E1AB1F3C02 /* Pods-AR Shopping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AR Shopping/AR Shopping.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BH2X6NBVBC;
+				DEVELOPMENT_TEAM = 55BKHE3292;
 				INFOPLIST_FILE = "AR Shopping/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.goabout.AR-Shopping";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ruber.AR-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
