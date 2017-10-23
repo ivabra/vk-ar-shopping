@@ -17,6 +17,7 @@ struct Product : Codable {
   var model: URL?
   var thumb_photo: URL?
   var size: Float?
+  var vklink: URL?
 }
 
 struct ProductResponse: Codable {

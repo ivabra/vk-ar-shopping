@@ -160,7 +160,9 @@ final class ARViewController: BaseViewController {
   }
   
   @IBAction private func buy(_ sender: Any) {
-    // TODO: buy the product
+    if let url = product?.vklink {
+      UIApplication.shared.open(url, completionHandler: nil)
+    }
   }
   
   private func applyRotationX(angle: Float) {
